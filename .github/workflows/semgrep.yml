@@ -26,7 +26,7 @@ jobs:
         # Hint: Checkout is needed so that semgrep can access your repo code
 
       - name: Itenne        # Options: choose any name you want. This step scans our code. 
-        run: semgrep scan --sarif --sarif-output=semgrep.sarif || true  (non-blocking)         # Options: 
+        run: semgrep scan --sarif --sarif-output=semgrep.sarif || true          # Options: 
                                      # semgrep scan --sarif --sarif-output=semgrep.sarif --error  (blocking)
                                      # semgrep scan --sarif --sarif-output=semgrep.sarif || true  (non-blocking)
         # Hint: Blocking mode stops workflow on issues; non-blocking continues
